@@ -32,7 +32,7 @@ const ReviewRequests = () => {
           <thead>
             <tr>
               <th className="px-4 py-2">Name</th>
-              <th className="px-4 py-2">Actions</th>
+              <th className="px-4 py-2">Status</th>
             </tr>
           </thead>
           <tbody>
@@ -46,18 +46,7 @@ const ReviewRequests = () => {
                     {request.name}</a>
                 </td>
                 <td className="px-4 py-2">
-                  <button
-                    className="bg-green-600 px-4 py-2 rounded mr-2 hover:bg-green-700"
-                    onClick={() => handleApprove(request.id)}
-                  >
-                    Approve
-                  </button>
-                  <button
-                    className="bg-red-600 px-4 py-2 rounded hover:bg-red-700"
-                    onClick={() => handleReject(request.id)}
-                  >
-                    Reject
-                  </button>
+                  {request.status}
                 </td>
               </tr>
             ))}

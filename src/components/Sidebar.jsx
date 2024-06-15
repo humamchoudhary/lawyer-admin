@@ -1,8 +1,9 @@
 import React from 'react';
 
+import "../scoped-tailwind.css";
 const Sidebar = () => {
   return (
-    <div className="bg-prim-light text-white w-64 h-screen px-4 pt-8 pb-4">
+    <div className="bg-prim-light text-white w-64 h-screen px-4 pt-8 pb-4 scoped-tailwind">
       <div className="flex flex-col items-center">
         <div className="text-2xl font-bold mb-8">LEGAL-INSIGHT</div>
         <ul className="w-full">

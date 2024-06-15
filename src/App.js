@@ -11,6 +11,7 @@ import AddJudgment from "./components/AddJudgment";
 import DeleteJudgment from "./components/DeteleJudgment";
 import EditJudgment from "./components/EditJudgment";
 import ReviewRequests from "./components/ReviewRequest";
+import Profile from "./components/Profile";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             <Route path="/admin/delete-judgment" component={DeleteJudgment} />
             <Route path="/admin/edit-judgment" component={EditJudgment} />
             <Route path="/admin/review-requests" component={ReviewRequests} />
+            <Route path="/profile/:id" component={Profile} />
           </Switch>
         </div>
       </div>
